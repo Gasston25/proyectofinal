@@ -70,13 +70,13 @@ main h2{
     padding: 35px;
 }
 form{
-    background-color: rgb(54, 54, 54);
-    border: 5px solid #0d6efd;
     text-align: center;
-    height: 20vh;
+    height: 100vh;
+    width: 100vh;
 }
 
-label{
+label, input{
+    width: 80%;
     background-color: rgb(146, 146, 146);
     color: black;
     padding: 5px;
@@ -85,10 +85,13 @@ label{
 }
 fieldset{
     display: flex;
-    flex-direction: row;
+    flex-direction: colum;
+    align-content:center;
     flex-wrap: wrap;
     border: 15px double #0d6efd;
     margin-top: 2vh ;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .enviar{
@@ -103,5 +106,13 @@ footer{
 }
 
 
-/*Espero que asi este bien ordenado*/
+/*Extra*/
+@media (max-width: 500px){
+label, input{
+	width: auto;
+}
+form {
+	margin: auto;
+    }
+}
 
